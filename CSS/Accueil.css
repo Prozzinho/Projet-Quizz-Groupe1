@@ -1,0 +1,18 @@
+footer{
+    background-color: #EB7D46;
+    color: black;
+    display: flex;
+}
+footer .credits{
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+    height: 100%;
+}
+footer .reseaux{
+    display: flex;
+    justify-content: space-around;
+    width:35%;
+    height:100%;
+    align-self: center;
+}
