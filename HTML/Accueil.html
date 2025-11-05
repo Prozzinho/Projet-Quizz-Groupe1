@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +20,33 @@
            <a href="Connexion.html" class="header-link">Se connecter</a>
        </nav>
     </header>
+      <!-- Navbar -->
+    <nav class="navbar">
+        <a href="Accueil.html" class="nav-item">Accueil</a>
+        <a href="Quizz.html" class="nav-item">Quizz</a>
+        <a href="Classement.html" class="nav-item">Classement</a>
+    </nav>
+
+    <!-- Carrousel -->
+    <div class="carousel-container">
+        <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+        
+        <div class="carousel">
+            <div class="carousel-slide">
+                <img src="C:\Users\gcorn\Downloads\Property 1=Default.png" alt="Slide 1" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+            </div>
+
+            <div class="carousel-slide">
+                <img src="C:\Users\gcorn\Downloads\Property 1=Variant2.png" alt="Slide 2" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+            </div>
+
+            <div class="carousel-slide">
+                <img src="C:\Users\gcorn\Downloads\Property 1=Variant3.png" alt="Slide 3" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+            </div>
+        </div>
+
+        <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
   
     <hr id="hr-titre-h2">
     <h2 id="titre-h2" class="rajdhani-medium">Les quizz les plus joués :</h2>
