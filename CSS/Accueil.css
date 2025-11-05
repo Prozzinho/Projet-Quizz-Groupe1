@@ -91,10 +91,14 @@
 
 #hr-titre-h2 {
     width: 400px;
+    align-self: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 #titre-h2 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 #container-quizz {
