@@ -5,10 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/Accueil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <!--Police Rajdhani-->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <!--Police QuickSand-->
     
     <title>Accueil</title>
 </head>
 <body>
-    <script src="../JS/Accueil.js"></script> //A laisser à la fin du body
+    <hr id="hr-titre-h2">
+    <h2 id="titre-h2" class="rajdhani-medium">Les quizz les plus joués :</h2>
+    <div id="container-quizz">
+        <div id="quizz-1">
+            <h3 class="rajdhani-medium h3-quizz">Javascript</h3>
+            <img src="../Assets/IMG/javascript-logo.png" alt="Javascript">
+            <button class="quicksand">Jouer</button>
+        </div>
+
+        <span class="vr-accueil"></span>
+
+        <div id="quizz-2">
+            <h3 class="rajdhani-medium h3-quizz">HTML</h3>
+            <img src="../Assets/IMG/html-logo.png" alt="HTML">
+            <button class="quicksand">Jouer</button>
+
+        </div>
+
+        <span class="vr-accueil"></span>
+
+        <div id="quizz-3">
+            <h3 class="rajdhani-medium h3-quizz">CSS</h3>
+            <img src="../Assets/IMG/css-logo.png" alt="CSS">
+            <button class="quicksand">Jouer</button>
+
+        </div>
+    </div>
+    </nav>
+    <script src="../JS/Accueil.js"></script> <!--A laisser à la fin du body-->
 </body>
 </html>
