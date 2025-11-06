@@ -88,3 +88,24 @@ footer .reseaux{
     font-family: 'Orbitron', Arial, sans-serif;
     font-size: 18px;
 }
+
+      
+/* Navbar */
+.navbar {
+background-color: #DFDEFF;
+padding: 0;
+  display: flex;
+}
+
+.nav-item {
+padding: 15px 25px;
+text-decoration: none;
+color: #000;
+font-size: 20px;
+transition: background-color 0.3s;
+font-family: 'Rajdhani', sans-serif;
+}
+
+.nav-item:hover {
+background-color: #c0c0d8;
+}
