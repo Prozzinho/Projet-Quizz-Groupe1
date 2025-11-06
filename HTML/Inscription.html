@@ -18,8 +18,14 @@
             <a href="Inscription.html" class="header-link">S'inscrire</a>
             <a href="Connexion.html" class="header-link">Se connecter</a>
         </nav>
-    </header>
-    <div id="container-inscription">
+  </header>
+      <!-- Navbar -->
+    <nav class="navbar">
+        <a href="Accueil.html" class="nav-item">Accueil</a>
+        <a href="Quizz.html" class="nav-item">Quizz</a>
+        <a href="Classement.html" class="nav-item">Classement</a>
+    </nav>
+      <div id="container-inscription">
         <h2 class="rajdhani-medium">Inscription</h2>
         <hr>
         <!-- Formulaire d'inscription; l'ID est utilisé par le JS pour intercepter la soumission -->
@@ -34,7 +40,8 @@
             <input type="text" name="firstname" required>
             <button type="submit" class="rajdhani-regular" id="bouton-inscription" disabled>S'inscire</button>
         </form>
-    </div>
+      </div>
+  
 
     <div id="modal-backdrop"></div>
     <div id="popup-inscription" class="modal-inscription">
@@ -42,9 +49,8 @@
         <p class="rajdhani-medium">cliquez sur le bouton ci dessous pour vous connecter.</p>
         <button id="bouton-connecter" class="rajdhani-medium">Se connecter</button>
     </div>
-
-
-    <footer>
+  
+      <footer>
         <div class="credits">
         <p>Mentions légales</p>
         <p>C.G.U</p>
