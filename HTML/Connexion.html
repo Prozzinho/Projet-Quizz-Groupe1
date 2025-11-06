@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="../CSS/Connexion.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <!--Police Rajdhani-->
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <!--Police QuickSand-->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Connexion</title>
 </head>
 <body>
 
-     <header class="main-header">
+    <header class="main-header">
         <img src="../Assets/img/logo-header.png" alt="Logo du Quizz" class="header-logo">
         <nav class="header-nav">
             <a href="Inscription.html" class="header-link">S'inscrire</a>
@@ -21,24 +21,64 @@
         </nav>
     </header>
 
-    <script src="../JS/Connexion.js"></script> 
+    <main class="connexion-container">
+        <div class="connexion-card">
+            <h1 class="connexion-title">Se connecter</h1>
+            
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        class="form-input" 
+                        placeholder="votre@email.com" 
+                        required
+                        autocomplete="email"
+                    >
+                </div>
 
-    
+                <div class="form-group">
+                    <label for="password" class="form-label">Mot de passe</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        class="form-input" 
+                        placeholder="••••••••" 
+                        required
+                        autocomplete="current-password"
+                    >
+                </div>
 
-    <script src="../JS/Connexion.js"></script> 
+                <div class="form-message" id="errorMessage"></div>
+
+                <button type="submit" class="btn-submit">
+                    Se connecter
+                </button>
+            </form>
+
+            <div class="form-footer">
+                <p>Pas encore de compte ? <a href="Inscription.html" class="link-register">S'inscrire</a></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="../JS/Connexion.js"></script>
 
 </body>
 <footer>
     <div class="credits">
-    <p>Mentions légales</p>
-    <p>C.G.U</p>
-    <p>Politique de confidentialité</p>
+        <p>Mentions légales</p>
+        <p>C.G.U</p>
+        <p>Politique de confidentialité</p>
     </div>
     <div class="reseaux">
-    <img src="../Assets/img/Youtube.png"height="40" width="40">    
-    <img src="../Assets/img/Tiktok.png"height="40" width="40">
-    <img src="../Assets/img/Insta.png"height="40" width="40">
-    <img src="../Assets/img/Twitter.png"height="40" width="40">
+        <img src="../Assets/img/Youtube.png" height="40" width="40" alt="Youtube">    
+        <img src="../Assets/img/Tiktok.png" height="40" width="40" alt="Tiktok">
+        <img src="../Assets/img/Insta.png" height="40" width="40" alt="Instagram">
+        <img src="../Assets/img/Twitter.png" height="40" width="40" alt="Twitter">
     </div>
 </footer>
 </html>

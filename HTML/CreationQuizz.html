@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/CreationQuizz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Création de Quiz</title>
+</head>
+<body>
+
+    <header class="main-header">
+        <img src="../Assets/img/logo-header.png" alt="Logo du Quizz" class="header-logo">
+        <nav class="header-nav">
+            <a href="Inscription.html" class="header-link">S'inscrire</a>
+            <a href="Connexion.html" class="header-link">Se connecter</a>
+        </nav>
+    </header>
+
+    <main class="creation-container">
+        <div class="creation-content">
+            <h1 class="creation-title">Créer un nouveau quiz</h1>
+            
+            <form id="quizForm" class="quiz-form">
+                
+                <!-- Informations générales du quiz -->
+                <section class="form-section">
+                    <h2 class="section-title">Informations générales</h2>
+                    
+                    <div class="form-group">
+                        <label for="quizTitle" class="form-label">Titre du quiz *</label>
+                        <input type="text" id="quizTitle" name="quizTitle" class="form-input" 
+                               placeholder="Ex: Quiz sur l'histoire de France" required maxlength="255">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quizDescription" class="form-label">Description</label>
+                        <textarea id="quizDescription" name="quizDescription" class="form-textarea" 
+                                  rows="4" placeholder="Décrivez brièvement votre quiz..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quizCategory" class="form-label">Catégorie *</label>
+                        <select id="quizCategory" name="quizCategory" class="form-select" required>
+                            <option value="">Sélectionnez une catégorie</option>
+                            <option value="histoire">Histoire</option>
+                            <option value="geographie">Géographie</option>
+                            <option value="sciences">Sciences</option>
+                            <option value="culture">Culture générale</option>
+                            <option value="sport">Sport</option>
+                            <option value="cinema">Cinéma</option>
+                            <option value="musique">Musique</option>
+                            <option value="technologie">Technologie</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quizImage" class="form-label">Image du quiz (URL)</label>
+                        <input type="url" id="quizImage" name="quizImage" class="form-input" 
+                               placeholder="https://exemple.com/image.jpg">
+                    </div>
+                </section>
+
+                <!-- Section des questions -->
+                <section class="form-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Questions</h2>
+                        <button type="button" id="addQuestionBtn" class="btn-add-question">
+                            + Ajouter une question
+                        </button>
+                    </div>
+                    
+                    <div id="questionsContainer" class="questions-container">
+                        <!-- Les questions seront ajoutées dynamiquement ici -->
+                    </div>
+                </section>
+
+                <!-- Boutons d'action -->
+                <div class="form-actions">
+                    <button type="button" id="cancelBtn" class="btn-secondary">
+                        Annuler
+                    </button>
+                    <button type="submit" class="btn-primary">
+                        Créer le quiz
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="../JS/CreationQuizz.js"></script>
+
+</body>
+<footer>
+    <div class="credits">
+        <p>Mentions légales</p>
+        <p>C.G.U</p>
+        <p>Politique de confidentialité</p>
+    </div>
+    <div class="reseaux">
+        <img src="../Assets/img/Youtube.png" height="40" width="40" alt="Youtube">    
+        <img src="../Assets/img/Tiktok.png" height="40" width="40" alt="Tiktok">
+        <img src="../Assets/img/Insta.png" height="40" width="40" alt="Instagram">
+        <img src="../Assets/img/Twitter.png" height="40" width="40" alt="Twitter">
+    </div>
+</footer>
+</html>

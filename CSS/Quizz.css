@@ -1,0 +1,54 @@
+/* Container principal de la page Quizz */
+.quiz-container {
+    min-height: calc(100vh - 200px);
+    position: relative;
+    padding: 40px 20px;
+}
+
+/* Bouton Créer un quiz - positionné en bas à gauche */
+.btn-create-quiz {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 16px 48px;
+    background-color: #e57c44;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    
+    /* Positionnement en bas à gauche */
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+
+.btn-create-quiz:hover {
+    background-color: #d16935;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-create-quiz:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-create-quiz:focus {
+    outline: 3px solid rgba(229, 124, 68, 0.4);
+    outline-offset: 2px;
+}
+
+/* Responsive pour petits écrans */
+@media (max-width: 768px) {
+    .btn-create-quiz {
+        font-size: 1rem;
+        padding: 14px 36px;
+        bottom: 20px;
+        left: 20px;
+    }
+}
