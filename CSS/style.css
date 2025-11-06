@@ -1,1 +1,89 @@
 /* ici on modifira le header et footer - Sert aussi pour mettre les polices */
+footer{
+    background-color: #EB7D46;
+    color: black;
+    display: flex;
+}
+footer .credits{
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+    height: 100%;
+}
+footer .reseaux{
+    display: flex;
+    justify-content: space-around;
+    width:35%;
+    height:100%;
+    align-self: center;
+}
+/* ------------------------------------------------ */
+/* Police Rajdhani */
+.rajdhani-light {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .rajdhani-regular {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .rajdhani-medium {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .rajdhani-semibold {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .rajdhani-bold {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+/* Police QuickSand */
+
+.quicksand {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+/* ------------------------------------------------ */
+.main-header {
+    background-color: #e57c44;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    border: 2px solid #4294e1;
+}
+
+.header-logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #222;
+}
+
+.header-nav {
+    display: flex;
+    gap: 24px;
+}
+
+.header-link {
+    color: #222;
+    text-decoration: none;
+    font-family: 'Orbitron', Arial, sans-serif;
+    font-size: 18px;
+}
