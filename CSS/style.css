@@ -109,3 +109,7 @@ font-family: 'Rajdhani', sans-serif;
 .nav-item:hover {
 background-color: #c0c0d8;
 }
+
+.pasConnecter{
+  display: none !important;
+}

@@ -6,20 +6,20 @@ const loginBtn = document.getElementById('bouton-connecter');
 
 if (form) {
     form.addEventListener('submit', async (event) => {
+        event.preventDefault();
 
         const login = {
-            firstname: form.firstname,
-            lastname: form.lastname,
-            email: form.email,
-            password: form.password
+            firstname: form.firstname.value,
+            lastname: form.lastname.value,
+            email: form.email.value,
+            password: form.password.value
         }
 
         try {
-            // Code à essayer
             const response = await fetch('https://quizz.adrardev.fr/api/user', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(payload)
+                body: JSON.stringify(login)
             });
         
             const data = await response.json().catch(() => ({}));

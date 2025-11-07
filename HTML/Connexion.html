@@ -12,39 +12,45 @@
     <title>Connexion</title>
 </head>
 <body>
-
-     <header class="main-header">
+    <header class="main-header">
         <img src="../Assets/img/logo-header.png" alt="Logo du Quizz" class="header-logo">
         <nav class="header-nav">
             <a href="Inscription.html" class="header-link">S'inscrire</a>
             <a href="Connexion.html" class="header-link">Se connecter</a>
         </nav>
-    </header>
+  </header>
       <!-- Navbar -->
     <nav class="navbar">
         <a href="Accueil.html" class="nav-item">Accueil</a>
         <a href="Quizz.html" class="nav-item">Quizz</a>
         <a href="Classement.html" class="nav-item">Classement</a>
     </nav>
-
-    <script src="../JS/Connexion.js"></script> 
-
-    
-
-    <script src="../JS/Connexion.js"></script> 
-
-</body>
-<footer>
-     <div class="credits">
-        <a href="../HTML/Mentions.html" class="header-link" >Mentions légales </a>
-        <a href="../HTML/CGU.html" class="header-link" >C.G.U</a>
-        <a href="../HTML/Politique.html" class="header-link" >Politique de confidentialité</a>
+      <div id="container-connexion">
+        <h2 class="rajdhani-medium">Connexion</h2>
+        <hr>
+        <!-- Formulaire de connexion; l'ID est utilisé par le JS pour intercepter la soumission -->
+        <form id="connexion-form">
+            <label class="rajdhani-regular">Votre email:</label>
+            <input type="email" name="email" required autocomplete="email">
+            <label class="rajdhani-regular">Votre mot de passe:</label>
+            <input type="password" name="password" required>
+            <button type="submit" class="rajdhani-regular" id="bouton-connexion">Se connecter</button>
+        </form>
       </div>
-    <div class="reseaux">
-    <img src="../Assets/img/Youtube.png"height="40" width="40">    
-    <img src="../Assets/img/Tiktok.png"height="40" width="40">
-    <img src="../Assets/img/Insta.png"height="40" width="40">
-    <img src="../Assets/img/Twitter.png"height="40" width="40">
-    </div>
-</footer>
+  
+      <footer>
+        <div class="credits">
+        <p>Mentions légales</p>
+        <p>C.G.U</p>
+        <p>Politique de confidentialité</p>
+        </div>
+        <div class="reseaux">
+        <img src="../Assets/img/Youtube.png"height="40" width="40">    
+        <img src="../Assets/img/Tiktok.png"height="40" width="40">
+        <img src="../Assets/img/Insta.png"height="40" width="40">
+        <img src="../Assets/img/Twitter.png"height="40" width="40">
+        </div>
+    </footer>
+    <script src="../JS/Connexion.js"></script>
+</body>
 </html>
