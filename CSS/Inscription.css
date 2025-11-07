@@ -1,0 +1,112 @@
+#container-inscription {
+    background-color: #3B4CCA;
+    width: 30%;
+    height: auto;
+    margin: 2rem auto; /* centre horizontalement */
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+h2 {
+    margin-top: 10px;
+    align-self: center;
+    color: #FFFFFF;
+    font-size: 40px;
+}
+
+hr {
+    width: 300px;
+    align-self: center;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem auto;
+}
+
+form label {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+    align-self: center;
+    font-size: 30px;
+}
+
+form input {
+    margin-bottom: 5px;
+    height: 25px;
+    width: 350px;
+}
+
+button {
+    color: black;
+    background-color: #EE9090;
+    border: none;
+    border-radius: 15px;
+    width: 120px;
+    align-self: center;
+    height: 35px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#popup-inscription{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #3B4CCA;
+    width: 600px;
+    height: 150px;
+    margin: 2rem auto;
+    display: none;
+    border-radius: 15px;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+#popup-inscription.is-open {
+    display: flex;
+    
+}
+
+#popup-inscription p {
+    color: #FFFFFF;
+    font-size: 25px;
+    align-self: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    
+}
+
+#bouton-connecter {
+    width: 200px;
+}
+
+#bouton-connecter:hover{
+    background-color:#f5b9b9;
+}
+
+#bouton-inscription:hover{
+    background-color:#f5b9b9;
+}
+
+#modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.25);
+    backdrop-filter: blur(12px) brightness(0.7);
+    -webkit-backdrop-filter: blur(12px) brightness(0.7);
+    display: none;
+    z-index: 900;
+    will-change: backdrop-filter;
+    }
+
+#modal-backdrop.is-open {
+    display: block;
+}
